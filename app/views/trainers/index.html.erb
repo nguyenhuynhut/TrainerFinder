@@ -1,0 +1,47 @@
+<h1>Listing trainers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Pricerange</th>
+    <th>Phone</th>
+    <th>Citiesserved</th>
+    <th>Certs</th>
+    <th>Education</th>
+    <th>Specialty</th>
+    <th>Bio</th>
+    <th>Philos</th>
+    <th>Rating</th>
+    <th>Lat</th>
+    <th>Lon</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @trainers.each do |trainer| %>
+  <tr>
+    <td><%= trainer.name %></td>
+    <td><%= trainer.email %></td>
+    <td><%= trainer.priceRange %></td>
+    <td><%= trainer.phone %></td>
+    <td><%= trainer.citiesServed %></td>
+    <td><%= trainer.certs %></td>
+    <td><%= trainer.education %></td>
+    <td><%= trainer.specialty %></td>
+    <td><%= trainer.bio %></td>
+    <td><%= trainer.philos %></td>
+    <td><%= trainer.rating %></td>
+    <td><%= trainer.lat %></td>
+    <td><%= trainer.lon %></td>
+    <td><%= link_to 'Show', trainer %></td>
+    <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+    <td><%= link_to 'Destroy', trainer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Trainer', new_trainer_path %>

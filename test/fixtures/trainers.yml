@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  priceRange: MyString
+  phone: MyString
+  citiesServed: MyString
+  certs: MyString
+  education: MyString
+  specialty: MyString
+  bio: MyString
+  philos: MyString
+  rating: 1
+  lat: 1.5
+  lon: 1.5
+
+two:
+  name: MyString
+  email: MyString
+  priceRange: MyString
+  phone: MyString
+  citiesServed: MyString
+  certs: MyString
+  education: MyString
+  specialty: MyString
+  bio: MyString
+  philos: MyString
+  rating: 1
+  lat: 1.5
+  lon: 1.5

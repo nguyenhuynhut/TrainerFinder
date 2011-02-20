@@ -1,0 +1,69 @@
+<%= form_for(@trainer) do |f| %>
+  <% if @trainer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trainer.errors.count, "error") %> prohibited this trainer from being saved:</h2>
+
+      <ul>
+      <% @trainer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :'Price Range' %><br />
+    <%= f.text_field :priceRange %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :'Cities Served' %><br />
+    <%= f.text_field :citiesServed %>
+  </div>
+  <div class="field">
+    <%= f.label :certs %><br />
+    <%= f.text_field :certs %>
+  </div>
+  <div class="field">
+    <%= f.label :education %><br />
+    <%= f.text_field :education %>
+  </div>
+  <div class="field">
+    <%= f.label :specialty %><br />
+    <%= f.text_field :specialty %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br />
+    <%= f.text_field :bio %>
+  </div>
+  <div class="field">
+    <%= f.label :philos %><br />
+    <%= f.text_field :philos %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :lon %><br />
+    <%= f.text_field :lon %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
